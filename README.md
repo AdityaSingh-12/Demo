@@ -1,4 +1,4 @@
 # Demo
-My 3rd Git repo.
+My 1st Git repo.
 <br>
-Author - Aditya
+Author - Aditya Singh
