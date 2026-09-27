@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import fooditems from "./components/fooditems";
+import Fooditems from "./components/Fooditems";
+import Error from "./components/Error";
+import Item from "./components/Item";
 function App() {
-  //let fooditem = ["Salad", "Grilled", "Dal", "Smoothie", "Banana"];
-   let fooditem = [];
-
+  let fooditem = ["Salad", "Grilled", "Dal", "Smoothie","Banana"];
+  //let fooditem = [];
   return (
     <>
       <h1 className="App">Healthy Food</h1>
-      
-      <fooditems item={fooditem}></fooditems>
+      <Error fooditem={fooditem}></Error>
+      <Fooditems fooditem={fooditem}></Fooditems>
     </>
   );
 };
